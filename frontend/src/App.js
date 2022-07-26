@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home.jsx';
+import Adopt from './pages/Adopt.jsx';
+import Health from './pages/Health.jsx';
+import Security from './pages/Security.jsx';
+import Info from './pages/Info.jsx';
 
 function App() {
   return (
