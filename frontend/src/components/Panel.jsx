@@ -6,10 +6,12 @@ const Panel = () => {
     <div>
       <div className="flex flex-row w-screen h-72 items-center justify-center shadow-inner">
         <div className="flex flex-row place-content-between w-2/3">
-          <PanelCard />
-          <PanelCard />
-          <PanelCard />
-          <PanelCard />
+          <PanelCard className="panel1"/>
+          <PanelCard className="panel1"/>
+          <PanelCard className="panel1"/>
+          <PanelCard className="panel1"/>
+          <PanelCard className="panel1"/>
+
         </div>
       </div>
     </div>
