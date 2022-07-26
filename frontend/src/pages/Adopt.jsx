@@ -9,7 +9,7 @@ const Adopt = () => {
   return (
     <div>
       <AdoptCard id={0} setId={setId} />
-      {id !== -1 ? <AdoptModal id={id} /> : <></>}
+      {id !== -1 ? <AdoptModal id={id} setId={setId} /> : <></>}
     </div>
   );
 };

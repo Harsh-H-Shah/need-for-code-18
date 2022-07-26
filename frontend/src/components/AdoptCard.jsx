@@ -7,6 +7,7 @@ const AdoptCard = ({ id, setId }) => {
     <div
       onClick={() => {
         setId(id);
+        console.log(id);
       }}
     >
       <img src={Cat} alt="" />

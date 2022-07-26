@@ -5,3 +5,11 @@
     background-repeat: no-repeat;
     height: 100vh;
 }
+
+.bghealth{
+    background-image: url("../assets/images/bghealth.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
