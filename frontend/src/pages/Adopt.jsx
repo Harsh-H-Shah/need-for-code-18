@@ -1,7 +1,17 @@
-import React from 'react';
+import React from "react";
+import { useState } from "react";
+import AdoptCard from "../components/AdoptCard";
+import AdoptModal from "../components/AdoptModal";
 
 const Adopt = () => {
-  return <div>Adopt</div>;
+  const [id, setId] = useState(-1);
+
+  return (
+    <div>
+      <AdoptCard id={0} setId={setId} />
+      {id !== -1 ? <AdoptModal id={id} /> : <></>}
+    </div>
+  );
 };
 
 export default Adopt;
