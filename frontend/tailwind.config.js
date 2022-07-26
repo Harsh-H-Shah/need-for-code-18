@@ -10,6 +10,7 @@ module.exports = {
         green: "#D0F4DE",
         blue: "#A2D2FF",
         yellow: "#FCF6BD",
+        grey: "#D9D9D9",
       },
     },
     screens: {
@@ -29,7 +30,7 @@ module.exports = {
     },
     boxShadow: {
       "2xl": "0 -20px 70px -12px rgba(0, 0, 0, 0.15)",
-      xl: "0 0px 50px -5px rgba(0,0,0,0.4)",
+      xl: "0 0px 20px -1px rgba(0,0,0,0.2)",
       "3xl": "0 25px 50px 0px rgba(0, 0, 0, 0.15)",
       md: "0 8px 25px -7px rgba(0, 0, 0, 0.4)",
       inner: "inset 0 0 20px 2px rgba(0, 0, 0, 0.3)",

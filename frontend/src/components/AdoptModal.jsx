@@ -1,9 +1,20 @@
 import React from "react";
 import Cat from "../assets/images/cat.png";
 
-const AdoptModal = () => {
+const AdoptModal = ({ id, setId }) => {
+  const handleClick = () => {
+    setId(-1);
+  };
   return (
-    <div>
+    <div className="top-0 absolute">
+      <button
+        onClick={() => {
+          handleClick();
+          console.log(id);
+        }}
+      >
+        X
+      </button>
       <img src={Cat} alt="cat" />
       <h1>Sweety</h1>
       <p>gender</p>
