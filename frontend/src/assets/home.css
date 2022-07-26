@@ -64,6 +64,7 @@ h1{
 
 h2{
     font-weight: 600;
+    text-align: center;
 }
 
 h3{
@@ -179,3 +180,48 @@ text-primary text-2xl{
     width: 100%;
   }
   
+.foodtext-t{
+    color:#FF99C8;
+    font-weight: 500;
+    margin-top: 3em;
+    margin-right: 3em;
+    margin-bottom: 1em;
+    text-align: left;
+
+}
+
+.foodtext-p{
+    margin-top: 1.5em;
+    margin-right: 3em;
+    margin-bottom: 1em;
+    text-align: justify;
+
+}
+
+.exe-t{
+
+    color:#FF99C8;
+
+    font-weight: 500;
+    margin-top: 3em;
+    margin-left: 1em;
+    margin-right: 3em;
+    margin-bottom: 1em;
+    text-align: left;
+    
+}
+
+.exe-p{
+    
+    margin-left: 2em;;
+    margin-top: 1.5em;
+    margin-right: 3em;
+    margin-bottom: 1em;
+    text-align: justify;
+
+
+}
+
+.hr{
+    color: #FF99C8;
+}
