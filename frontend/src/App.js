@@ -6,12 +6,8 @@ import Home from "./pages/Home.jsx";
 import Info from "./pages/Info.jsx";
 import Security from "./pages/Security.jsx";
 import Footer from './footer'
-import Adopt from './pages/Adopt.jsx';
-import Health from './pages/Health.jsx';
-import Home from './pages/Home.jsx';
-import Info from './pages/Info.jsx';
-import Security from './pages/Security.jsx';
 import AdoptApp from './pages/AdoptApp.jsx';
+
 
 function App() {
   return (

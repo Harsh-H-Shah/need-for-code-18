@@ -12,7 +12,7 @@ const AdoptCard = ({ id, setId }) => {
     >
       <img src={Cat} alt="" />
       <p>Sweety</p>
-      <p>lorem ipsum hfdhf</p>
+      <p>A sweet playful kitty from Bangalore who is searching for her forever home.</p>
     </div>
   );
 };

@@ -23,7 +23,7 @@ const Home = () => {
             <h1 id="home-1"> We Care For <br/> Indian Strays </h1>
             <h3>Lorem ipsum dolor sit amet<br/>consectetur adipiscing elit</h3>
             <button className= "pinkbutton">Adopt</button>
-            <button className="pinkbutton">Donate</button>
+            <button className="pinkbutton1">Donate</button>
           </article>
         </div>
         <div>
@@ -39,7 +39,7 @@ const Home = () => {
         </div>
         <div classname="home-2">
         <article>
-          <h1>How can you help us?</h1>
+          <h1>Ways to Help</h1>
           <h4>
           You can help us by donating to our fundraiser. 100% of all donations go towards one or more of the following: Food for stray animals, emergency medical treatment, reflective collars, sterilizations or vaccinations. <br/><br/>
 
@@ -53,7 +53,7 @@ const Home = () => {
      </section>
      <section>
       <br/><br/>
-      <div className="panel">
+      <div className="whatwedo">
         <h1>What We Do</h1>
       </div>
       <br/><br/>
