@@ -12,7 +12,7 @@ const Adopt = () => {
 
   return (
     <div>
-      <section className="bgadoption">
+      <section className="bgadoption bg-contain">
         <Navbar />
         <div className="flex flex-row justify-evenly items-center">
           <article className="flex flex-col text-3xl ">
@@ -31,7 +31,9 @@ const Adopt = () => {
           </article>
         </div>
       </section>
-      <h1 className="flex flex-row justify-evenly items-center mt-10 text-3xl font-semibold">Adopt</h1>
+      <h1 className="flex flex-row justify-evenly items-center mt-10 text-3xl font-semibold">
+        Adopt
+      </h1>
       <AdoptCard id={0} setId={setId} />
       {id !== -1 ? <AdoptModal id={id} setId={setId} /> : <></>}
     </div>
