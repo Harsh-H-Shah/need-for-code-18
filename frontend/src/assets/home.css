@@ -232,3 +232,10 @@ text-primary text-2xl{
     background-repeat: no-repeat;
     height: 100vh;
 }
+.bgadoption{
+    background-image: url("../assets/images/adoptbg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
