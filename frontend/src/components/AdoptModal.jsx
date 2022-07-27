@@ -1,4 +1,6 @@
-import React from "react";
+import React from 'react';
+import Cat from '../assets/images/cat.png';
+import { Link } from 'react-router-dom';
 
 export default function Modal() {
   const [showModal, setShowModal] = React.useState(false);

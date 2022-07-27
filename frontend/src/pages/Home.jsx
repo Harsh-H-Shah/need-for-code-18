@@ -1,41 +1,80 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import Panel from "../components/Panel";
-import HomeCss from "../assets/home.css";
-import Lady from "../assets/images/ladyillustration.png";
-import Dog from "../assets/images/dogillustration.png";
-import Footer from "../footer";
-
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
+import Panel from '../components/Panel';
+import HomeCss from '../assets/home.css';
+import Lady from '../assets/images/ladyillustration.png';
+import Dog from '../assets/images/dogillustration.png';
+import Cat from '../assets/images/cat_illus.png';
+import ContactForm from '../components/ContactForm';
+import Footer from '../footer';
 
 const Home = () => {
   return (
-    
-    
-      <div className="navbardiv">
-        <Navbar />
+    <div className="navbardiv">
+      <Navbar />
       <section className="bgimage" class="object-fit">
-        
-      <div class="grid grid-cols-2 gap-2">
-        <div>
-  
-          <article>
-            <h1 id="home-1"> We Care For <br/> Indian Strays </h1>
-            <h3>Lorem ipsum dolor sit amet<br/>consectetur adipiscing elit</h3>
-            <button className= "pinkbutton">Adopt</button>
-            <button className="pinkbutton1">Donate</button>
-          </article>
-        </div>
-        <div>
-        <img className="lady"class="object-scale-down h-80 w-50" src={Lady} alt="lady" />
-        </div>
-      </div>
-     </section>
 
-     <section>
-      <div class="grid grid-cols-2 gap-2">
-        <div>
-        <img className="dog1" class="object-scale-down h-80 w-50" src={Dog} alt="dog"/>
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <article>
+              <h1 id="home-1">
+                {' '}
+                We Care For <br /> Indian Strays{' '}
+              </h1>
+              <h3>
+                Pets have a lot of love
+                <br />
+                and compassion in them
+              </h3>
+              <Link to="/adopt" className="pinkbutton">
+                Adopt
+              </Link>
+              <a href="https://pawshunger.com/donate/" className="pinkbutton">
+                Donate
+              </a>
+            </article>
+          </div>
+          <div>
+            <img
+              className="lady"
+              class="object-scale-down h-80 w-50"
+              src={Lady}
+              alt="lady"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <img
+              className="dog1"
+              class="object-scale-down h-80 w-50"
+              src={Dog}
+              alt="dog"
+            />
+          </div>
+          <div classname="home-2">
+            <article className="mr-4">
+              <h1>How can you help us?</h1>
+              <h4>
+                You can help us by donating to our fundraiser. 100% of all
+                donations go towards one or more of the following: Food for
+                stray animals, emergency medical treatment, reflective collars,
+                sterilizations or vaccinations. <br />
+                <br />
+                Or register and become a part of Paws Hunger! Earn a
+                certificate, LOR, and other benefits by feeding a stray in your
+                own neighborhood for a minimum period of 1 month. You are
+                eligible to register even if you already feed a stray animal.
+              </h4>
+            </article>
+            <a href="https://pawshunger.com/register/" className="bluebutton">
+              Register
+            </a>
+          </div>
         </div>
         <div classname="home-2">
         <article>
@@ -79,14 +118,14 @@ const Home = () => {
         </div>
         <div>
         <img className="dog2" class="object-scale-down h-80 w-50" src={Dog} alt="dog"/>
+
         </div>
-      </div>
-      <br/><br/>
-     </section>
-     <Footer />
+        <br />
+        <br />
+      </section>
+      <ContactForm />
+      <Footer />
     </div>
-    
-    
   );
 };
 

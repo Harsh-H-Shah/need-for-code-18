@@ -1,16 +1,19 @@
-import React from "react";
+import React from 'react';
 
-function VetsCard() {
+function VetsCard({ idx, name, location, contact }) {
   return (
-    <div>
-      <section className="flex flex-row">
-        <p>Name</p>
-        <p>1.8km away</p>
-        <button className="h-14 mt-6 text-xl rounded-xl rounded-t-none bg-secondary-green w-full">
-          Contact
-        </button>
-      </section>
-      <p>Area</p>
+    <div
+      key={idx}
+      className="flex items-center justify-around m-6 h-32 w-5/6 shadow-xl rounded-lg"
+    >
+      <h1 className="text-2xl mt-3">{name}</h1>
+      <p className="text-lg text-secondary-grey mt-2">{location}</p>
+      <button
+        href={contact}
+        className="h-14 mt-6 w-24 text-xl rounded-md bg-secondary-green"
+      >
+        Contact
+      </button>
     </div>
   );
 }

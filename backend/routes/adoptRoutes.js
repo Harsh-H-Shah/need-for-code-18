@@ -7,6 +7,6 @@ const {
 } = require('../controllers/adoptController');
 
 router.route('/').get(getPets).post(postPet);
-router.route('/:id/apply').post(applyForAdoption);
+router.route('/apply').post(applyForAdoption);
 
 module.exports = router;

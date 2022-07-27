@@ -12,7 +12,6 @@ const personSchema = mongoose.Schema({
   },
   contactno: String,
   address: String,
-  pincode: String,
   petofinterest: String,
   percentage: String,
   fence: String,
