@@ -23,7 +23,6 @@ const reportSchema = mongoose.Schema({
   contactabuser: String,
   pincode: String,
   abusedetail: String,
-  imgUrl: String,
 });
 
 module.exports = mongoose.model('report', reportSchema);

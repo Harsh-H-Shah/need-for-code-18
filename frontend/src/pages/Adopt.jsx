@@ -1,3 +1,4 @@
+import GivePet from '../components/GivePet';
 import React from "react";
 import { useState } from "react";
 import AdoptCard from "../components/AdoptCard";
@@ -34,6 +35,7 @@ const Adopt = () => {
       <h1 className="flex flex-row justify-evenly items-center mt-10 text-3xl font-semibold">Adopt</h1>
       <AdoptCard id={0} setId={setId} />
       {id !== -1 ? <AdoptModal id={id} setId={setId} /> : <></>}
+      <GivePet />
     </div>
   );
 };
