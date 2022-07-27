@@ -31,13 +31,12 @@ const postPet = async (req, res) => {
 //@route: POST /api/adopt/pets/:id/apply
 //@access: Public
 const applyForAdoption = async (req, res) => {
-  const { id } = req.params;
   const person = req.body;
   try {
-    const pet = await Pet.findById(id);
-    if (!pet) {
-      return res.status(404).json({ message: 'Pet not found' });
-    }
+    // const pet = await Pet.findById(id);
+    // if (!pet) {
+    //   return res.status(404).json({ message: 'Pet not found' });
+    // }
     const newPerson = await Person.create(person);
     res.status(201).json(pet);
   } catch (err) {

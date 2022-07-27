@@ -1,12 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
 
-import Adopt from "./pages/Adopt.jsx";
-import Health from "./pages/Health.jsx";
-import Home from "./pages/Home.jsx";
-import Info from "./pages/Info.jsx";
-import Security from "./pages/Security.jsx";
-import Footer from './footer'
 import Adopt from './pages/Adopt.jsx';
 import Health from './pages/Health.jsx';
 import Home from './pages/Home.jsx';

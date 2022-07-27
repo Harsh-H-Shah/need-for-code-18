@@ -1,15 +1,26 @@
 import GivePet from '../components/GivePet';
-import React from "react";
-import { useState } from "react";
-import AdoptCard from "../components/AdoptCard";
-import AdoptModal from "../components/AdoptModal";
-import HomeCSS from "../assets/home.css";
-import Navbar from "../components/Navbar";
-import Adopt1 from "../assets/images/adopt1.png";
-import Adopt2 from "../assets/images/adopt2.png";
+import React from 'react';
+import { useState } from 'react';
+import AdoptCard from '../components/AdoptCard';
+import AdoptModal from '../components/AdoptModal';
+import HomeCSS from '../assets/home.css';
+import Navbar from '../components/Navbar';
+import Adopt1 from '../assets/images/adopt1.png';
+import Adopt2 from '../assets/images/adopt2.png';
+import { useEffect } from 'react';
+import axios from 'axios';
 
 const Adopt = () => {
   const [id, setId] = useState(-1);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await axios.get('http://localhost:5000/api/adopt');
+      setData(res.data);
+    };
+    fetchData();
+  }, [data]);
 
   return (
     <div>
@@ -32,8 +43,20 @@ const Adopt = () => {
           </article>
         </div>
       </section>
-      <h1 className="flex flex-row justify-evenly items-center mt-10 text-3xl font-semibold">Adopt</h1>
-      <AdoptCard id={0} setId={setId} />
+      <h1 className="flex flex-row justify-evenly items-center mt-10 text-3xl font-semibold">
+        Adopt
+      </h1>
+      <section className="flex flex-wrap p-10">
+        {data.map((item) => (
+          <AdoptCard
+            idx={item.id}
+            id={0}
+            setId={setId}
+            name={item.name}
+            gender={item.gender}
+          />
+        ))}
+      </section>
       {id !== -1 ? <AdoptModal id={id} setId={setId} /> : <></>}
       <GivePet />
     </div>
