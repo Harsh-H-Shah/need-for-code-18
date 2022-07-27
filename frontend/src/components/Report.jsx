@@ -38,7 +38,7 @@ const Report = () => {
 
   return (
     <form
-      className="flex flex-col bg-primary shadow-pn rounded-lg p-7 mt-14 w-5/6 tb:w-4/6 lp:w-3/6 dp:w-2/6 font-sans"
+      className="flex flex-col bg-secondary-blue shadow-pn rounded-lg p-7 mt-14 w-5/6 tb:w-4/6 lp:w-3/6 dp:w-2/6 font-sans"
       onSubmit={(e) => {
         handleSubmit(
           e,

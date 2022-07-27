@@ -1,46 +1,49 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import Panel from "../components/Panel";
-import HomeCss from "../assets/home.css";
-import Lady from "../assets/images/ladyillustration.png";
-import Dog from "../assets/images/dogillustration.png";
-import ContactForm from "../components/ContactForm";
-import Footer from "../footer";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
+import Panel from '../components/Panel';
+import HomeCss from '../assets/home.css';
+import Lady from '../assets/images/ladyillustration.png';
+import Dog from '../assets/images/dogillustration.png';
+import Cat from '../assets/images/cat_illus.png';
+import ContactForm from '../components/ContactForm';
+import Footer from '../footer';
 
 const Home = () => {
   return (
     <div className="navbardiv">
-      <div className="bgimage ml-4">
-        <Navbar />
-        <section className="object-fit">
-          <div class="grid grid-cols-2 gap-2">
-            <div>
-              <article>
-                <h1 id="home-1">
-                  {" "}
-                  We Care For <br /> Indian Strays{" "}
-                </h1>
-                <h3>
-                  Lorem ipsum dolor sit amet
-                  <br />
-                  consectetur adipiscing elit
-                </h3>
-                <button className="pinkbutton">Adopt</button>
-                <button className="pinkbutton">Donate</button>
-              </article>
-            </div>
-            <div>
-              <img
-                className="lady"
-                class="object-scale-down h-80 w-50"
-                src={Lady}
-                alt="lady"
-              />
-            </div>
+      <Navbar />
+      <section className="bgimage" class="object-fit">
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <article>
+              <h1 id="home-1">
+                {' '}
+                We Care For <br /> Indian Strays{' '}
+              </h1>
+              <h3>
+                Pets have a lot of love
+                <br />
+                and compassion in them
+              </h3>
+              <Link to="/adopt" className="pinkbutton">
+                Adopt
+              </Link>
+              <a href="https://pawshunger.com/donate/" className="pinkbutton">
+                Donate
+              </a>
+            </article>
           </div>
-        </section>
-      </div>
+          <div>
+            <img
+              className="lady"
+              class="object-scale-down h-80 w-50"
+              src={Lady}
+              alt="lady"
+            />
+          </div>
+        </div>
+      </section>
 
       <section>
         <div class="grid grid-cols-2 gap-2">
@@ -67,19 +70,17 @@ const Home = () => {
                 eligible to register even if you already feed a stray animal.
               </h4>
             </article>
-            <button className="bluebutton">Register</button>
+            <a href="https://pawshunger.com/register/" className="bluebutton">
+              Register
+            </a>
           </div>
         </div>
       </section>
       <section>
         <br />
         <br />
-        <div className="panel">
-          <h1>What We Do</h1>
-        </div>
+        <div className="panel"></div>
         <br />
-        <br />
-        <Panel />
       </section>
 
       <section>
@@ -106,8 +107,8 @@ const Home = () => {
             <img
               className="dog2"
               class="object-scale-down h-80 w-50"
-              src={Dog}
-              alt="dog"
+              src={Cat}
+              alt="cat"
             />
           </div>
         </div>

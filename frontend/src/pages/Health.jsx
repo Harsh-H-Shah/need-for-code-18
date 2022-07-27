@@ -1,10 +1,13 @@
-import React from "react";
-import HealthImg from "../assets/images/healthimg.png";
-import Navbar from "../components/Navbar";
-import HomeCss from "../assets/home.css";
-import Dog from "../assets/images/saddog.jpg";
-import OrganizationCard from "../components/OrganizationCard";
-import VetsCard from "../components/VetsCard";
+import React from 'react';
+import HealthImg from '../assets/images/healthimg.png';
+import Navbar from '../components/Navbar';
+import HomeCss from '../assets/home.css';
+import Dog from '../assets/images/saddog.jpg';
+import OrganizationCard from '../components/OrganizationCard';
+import VetsCard from '../components/VetsCard';
+import organizations from '../DB';
+import vets from '../Vet';
+import Footer from '../footer';
 
 const Health = () => {
   return (
@@ -46,14 +49,28 @@ const Health = () => {
           </p>
         </article>
       </section>
-      <div>
-        <p>Organizations</p>
-        <OrganizationCard />
+      <div className="flex flex-wrap">
+        {organizations.map((item) => (
+          <OrganizationCard
+            idx={item.id}
+            name={item.name}
+            location={item.location}
+            contact={item.contact}
+          />
+        ))}
       </div>
-      <section>
+      <section className="flex justify-center items-center flex-col">
         <h1>Find Vets Near You</h1>
-        <VetsCard />
+        {vets.map((item) => (
+          <VetsCard
+            idx={item.id}
+            name={item.name}
+            location={item.location}
+            contact={item.contact}
+          />
+        ))}
       </section>
+      <Footer />
     </div>
   );
 };
