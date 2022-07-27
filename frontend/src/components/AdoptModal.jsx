@@ -1,5 +1,6 @@
-import React from "react";
-import Cat from "../assets/images/cat.png";
+import React from 'react';
+import Cat from '../assets/images/cat.png';
+import { Link } from 'react-router-dom';
 
 const AdoptModal = ({ id, setId }) => {
   const handleClick = () => {
@@ -34,7 +35,7 @@ const AdoptModal = ({ id, setId }) => {
         <label></label>
       </section>
 
-      <button>Adopt</button>
+      <Link to="/adopt/app">Apply for adoption</Link>
     </div>
   );
 };
