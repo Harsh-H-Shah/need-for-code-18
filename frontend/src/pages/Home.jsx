@@ -22,9 +22,9 @@ const Home = () => {
                 We Care For <br /> Indian Strays{' '}
               </h1>
               <h3>
-                Lorem ipsum dolor sit amet
+                Pets have a lot of love
                 <br />
-                consectetur adipiscing elit
+                and compassion in them
               </h3>
               <Link to="/adopt" className="pinkbutton">
                 Adopt
@@ -56,7 +56,7 @@ const Home = () => {
             />
           </div>
           <div classname="home-2">
-            <article>
+            <article className="mr-4">
               <h1>How can you help us?</h1>
               <h4>
                 You can help us by donating to our fundraiser. 100% of all
@@ -86,7 +86,7 @@ const Home = () => {
       <section>
         <div class="grid grid-cols-2 gap-2">
           <div className="home-3">
-            <article>
+            <article className="ml-4">
               <h1>About Us</h1>
               <h4>
                 We are a youth-driven non-profit organization devoted to animal
@@ -115,6 +115,7 @@ const Home = () => {
         <br />
         <br />
       </section>
+      <ContactForm />
       <Footer />
     </div>
   );

@@ -4,16 +4,26 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav>
-      <img src={Logo} alt="logo" className="logo" />
+    <nav className="mt-4">
+      <Link to="/">
+        <img src={Logo} alt="logo" className="logo text-lg" />
+      </Link>
       <h2 className="pawshunger">PawsHunger</h2>
-      <Link to="/home" className="links">Home</Link>
-      <Link to="/adopt" className="links">Adoption</Link>
-      <Link to="/health" className="links">Health Care</Link>
-      <Link to="/" className="links">Report Abuse</Link>
-      <Link to="/info" className="links">Info</Link>
-      <Link to="/" className="links">Contact Us</Link>
-
+      <Link to="/" className="links text-lg">
+        Home
+      </Link>
+      <Link to="/adopt" className="links text-lg">
+        Adoption
+      </Link>
+      <Link to="/health" className="links text-lg">
+        Health Care
+      </Link>
+      <Link to="/security" className="links text-lg">
+        Report Abuse
+      </Link>
+      <Link to="/info" className="links text-lg">
+        Info
+      </Link>
     </nav>
   );
 };

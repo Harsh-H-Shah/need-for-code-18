@@ -14,9 +14,9 @@ const Health = () => {
     <div>
       <section className="bghealth">
         <Navbar />
-        <article className="h-3/5 flex flex-row justify-evenly items-center">
+        <article className="flex flex-row justify-evenly items-center">
           <span className="tb:ml-14 hidden tb:flex flex-col justify-center">
-            <h1 className="font-serif font-extralight text-gray text-6xl ">
+            <h1 className="font-serif font-extralight text-gray h-32 text-6xl ">
               Healing hands for <br className="hidden lp:block" />
               paws.
             </h1>
@@ -39,7 +39,9 @@ const Health = () => {
       <section className="h-3/5 flex flex-row justify-evenly items-center bg-secondary-pink ">
         <img className="w-2/5 mt-10 mb-10 -mr-10" src={Dog} alt="dog" />
         <article className="w-2/5 text-right">
-          <h1 className="ml-2 mb-10 text-5xl">Find organizations near you.</h1>
+          <h1 className="ml-2 h-32 mb-10 text-5xl">
+            Find organizations near you.
+          </h1>
           <p className="text-xl w-86 ">
             Only 10% of the dogs born find a permanent house. Each year,
             approximately 2.7 million dogs and cats are killed every year

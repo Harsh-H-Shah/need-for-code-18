@@ -24,7 +24,7 @@ const Adopt = () => {
 
   return (
     <div>
-      <section className="bgadoption">
+      <section className="bgadoption bg-contain">
         <Navbar />
         <div className="flex flex-row justify-evenly items-center">
           <article className="flex flex-col text-3xl ">
