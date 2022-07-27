@@ -1,19 +1,19 @@
 import React from "react";
 import Logo from "../assets/images/pawslogo.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav>
-      <img src={Logo} alt="logo" />
-      <p>PawsHunger</p>
-      <Link to="/">Home</Link>
-      <Link to="/adopt">Adoption</Link>
-      <Link to="/health">Healthcare</Link>
-      <li>Shelter</li>
-      <li>Report</li>
-      <li>Contact</li>
-      <Link to="/info">Info</Link>
+      <img src={Logo} alt="logo" className="logo" />
+      <h2 className="pawshunger">PawsHunger</h2>
+      <Link to="/home" className="links">Home</Link>
+      <Link to="/adopt" className="links">Adoption</Link>
+      <Link to="/health" className="links">Health Care</Link>
+      <Link to="/" className="links">Report Abuse</Link>
+      <Link to="/info" className="links">Info</Link>
+      <Link to="/" className="links">Contact Us</Link>
+
     </nav>
   );
 };
