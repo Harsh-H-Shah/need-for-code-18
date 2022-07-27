@@ -5,6 +5,7 @@ import Panel from "../components/Panel";
 import HomeCss from "../assets/home.css";
 import Lady from "../assets/images/ladyillustration.png";
 import Dog from "../assets/images/dogillustration.png";
+import ContactForm from "../components/ContactForm";
 
 const Home = () => {
   return (
@@ -39,6 +40,7 @@ const Home = () => {
       <section>
         <p> About Us</p>
       </section>
+      <ContactForm />
     </div>
   );
 };
